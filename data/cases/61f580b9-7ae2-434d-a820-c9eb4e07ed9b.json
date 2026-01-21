@@ -1,0 +1,13 @@
+{
+  "caseId": "61f580b9-7ae2-434d-a820-c9eb4e07ed9b",
+  "meetingId": "mw0q-lrbw-n45i",
+  "participantName": "",
+  "role": "unknown",
+  "createdAt": "2026-01-21T01:05:28.216Z",
+  "server": {
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "acceptLanguage": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"
+  },
+  "evidences": []
+}

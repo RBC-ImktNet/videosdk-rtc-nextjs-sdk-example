@@ -1,0 +1,15 @@
+{
+  "serverEvidence": {
+    "caseId": "a90624fa-2b6c-4ae8-890f-274049b7d649",
+    "meetingId": "brn9-buha-m02z",
+    "mode": "create",
+    "role": "creator",
+    "participantName": null,
+    "createdAt": "2026-01-21T01:33:51.461Z",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "acceptLanguage": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+    "host": "localhost:3001"
+  },
+  "clientEvidence": []
+}

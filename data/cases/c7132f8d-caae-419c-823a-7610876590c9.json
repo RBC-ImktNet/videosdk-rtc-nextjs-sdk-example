@@ -1,0 +1,65 @@
+{
+  "caseId": "c7132f8d-caae-419c-823a-7610876590c9",
+  "meetingId": "mw0q-lrbw-n45i",
+  "participantName": "",
+  "role": "creator",
+  "createdAt": "2026-01-21T01:05:27.600Z",
+  "server": {
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "acceptLanguage": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"
+  },
+  "evidences": [
+    {
+      "type": "client_evidence",
+      "ts": "2026-01-21T01:05:27.565Z",
+      "geo": {
+        "supported": true,
+        "allowed": true,
+        "coords": {
+          "latitude": -2.492514573357375,
+          "longitude": -44.244481230099396,
+          "accuracy": 187
+        }
+      },
+      "net": {
+        "effectiveType": "4g",
+        "downlink": 4,
+        "rtt": 100,
+        "saveData": false
+      },
+      "permissions": {
+        "microphone": {
+          "supported": true,
+          "state": "granted"
+        },
+        "camera": {
+          "supported": true,
+          "state": "granted"
+        }
+      },
+      "device": {
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+        "lang": "pt-BR",
+        "tz": "America/Sao_Paulo",
+        "platform": "Win32",
+        "screen": {
+          "width": 1366,
+          "height": 768,
+          "pixelRatio": 1
+        },
+        "hardware": {
+          "deviceMemory": 8,
+          "hardwareConcurrency": 12
+        }
+      },
+      "mediaDevices": {
+        "supported": true,
+        "audioInputs": 3,
+        "videoInputs": 1,
+        "audioOutputs": 4
+      },
+      "receivedAt": "2026-01-21T01:05:28.000Z"
+    }
+  ]
+}

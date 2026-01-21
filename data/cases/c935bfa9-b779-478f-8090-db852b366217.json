@@ -1,0 +1,13 @@
+{
+  "caseId": "c935bfa9-b779-478f-8090-db852b366217",
+  "meetingId": "daoc-zm56-2ma9",
+  "participantName": "",
+  "role": "unknown",
+  "createdAt": "2026-01-21T01:08:41.861Z",
+  "server": {
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "acceptLanguage": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"
+  },
+  "evidences": []
+}

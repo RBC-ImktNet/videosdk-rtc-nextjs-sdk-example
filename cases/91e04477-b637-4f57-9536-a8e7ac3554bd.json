@@ -1,0 +1,48 @@
+{
+  "serverEvidence": {
+    "caseId": "91e04477-b637-4f57-9536-a8e7ac3554bd",
+    "meetingId": "xyok-41va-v71f",
+    "mode": "create",
+    "createdAt": "2026-01-21T00:50:28.168Z",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "acceptLanguage": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+    "host": "localhost:3001"
+  },
+  "clientEvidence": [
+    {
+      "receivedAt": "2026-01-21T00:50:28.451Z",
+      "data": {
+        "capturedAt": "2026-01-21T00:50:28.144Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+        "language": "pt-BR",
+        "platform": "Win32",
+        "timezone": "America/Sao_Paulo",
+        "timezoneOffsetMinutes": 180,
+        "screen": {
+          "width": 1366,
+          "height": 768,
+          "devicePixelRatio": 1
+        },
+        "viewport": {
+          "innerWidth": 1366,
+          "innerHeight": 641
+        },
+        "permissions": {
+          "supported": true,
+          "camera": "granted",
+          "microphone": "granted",
+          "geolocation": "denied"
+        },
+        "geo": {
+          "supported": true,
+          "allowed": false,
+          "error": {
+            "code": 1,
+            "message": "User denied Geolocation"
+          }
+        }
+      }
+    }
+  ]
+}

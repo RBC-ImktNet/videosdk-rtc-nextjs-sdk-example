@@ -1,0 +1,48 @@
+{
+  "serverEvidence": {
+    "caseId": "c12e95bd-c34b-4a6d-88a8-013aba75e498",
+    "meetingId": null,
+    "mode": "create",
+    "createdAt": "2026-01-21T00:27:32.136Z",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "acceptLanguage": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+    "host": "localhost:3001"
+  },
+  "clientEvidence": [
+    {
+      "receivedAt": "2026-01-21T00:27:32.435Z",
+      "data": {
+        "capturedAt": "2026-01-21T00:27:32.129Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+        "language": "pt-BR",
+        "platform": "Win32",
+        "timezone": "America/Sao_Paulo",
+        "timezoneOffsetMinutes": 180,
+        "screen": {
+          "width": 1366,
+          "height": 768,
+          "devicePixelRatio": 1
+        },
+        "viewport": {
+          "innerWidth": 1366,
+          "innerHeight": 641
+        },
+        "permissions": {
+          "supported": true,
+          "camera": "granted",
+          "microphone": "granted",
+          "geolocation": "denied"
+        },
+        "geo": {
+          "supported": true,
+          "allowed": false,
+          "error": {
+            "code": 1,
+            "message": "User denied Geolocation"
+          }
+        }
+      }
+    }
+  ]
+}

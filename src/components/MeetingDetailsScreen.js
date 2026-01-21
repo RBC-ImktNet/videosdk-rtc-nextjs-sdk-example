@@ -10,13 +10,16 @@ export function MeetingDetailsScreen({
   videoTrack,
   setVideoTrack,
   onClickStartMeeting,
+  evidenceOk,
+  evidenceLoading,
+  evidenceError,
 }) {
   const [meetingId, setMeetingId] = useState("");
   const [meetingIdError, setMeetingIdError] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
-
   const [iscreateMeetingClicked, setIscreateMeetingClicked] = useState(false);
   const [isJoinMeetingClicked, setIsJoinMeetingClicked] = useState(false);
+
   const padding = useResponsiveSize({
     xl: 6,
     lg: 6,
@@ -25,24 +28,22 @@ export function MeetingDetailsScreen({
     xs: 1.5,
   });
 
+  const startDisabled =
+    participantName.length < 3 ||
+    (iscreateMeetingClicked && !evidenceOk) ||
+    evidenceLoading;
+
   return (
-    <div
-      className={`flex flex-1 flex-col w-full `}
-      style={{
-        padding: padding,
-      }}
-    >
+    <div className="flex flex-1 flex-col w-full" style={{ padding }}>
       {iscreateMeetingClicked ? (
-        <div className="border border-solid border-gray-400 rounded-xl px-4 py-3  flex items-center justify-center">
+        <div className="border border-solid border-gray-400 rounded-xl px-4 py-3 flex items-center justify-center">
           <p className="text-white text-base">Meeting code: {meetingId}</p>
           <button
             className="ml-2"
             onClick={() => {
               navigator.clipboard.writeText(meetingId);
               setIsCopied(true);
-              setTimeout(() => {
-                setIsCopied(false);
-              }, 3000);
+              setTimeout(() => setIsCopied(false), 3000);
             }}
           >
             {isCopied ? (
@@ -56,9 +57,7 @@ export function MeetingDetailsScreen({
         <>
           <input
             defaultValue={meetingId}
-            onChange={(e) => {
-              setMeetingId(e.target.value);
-            }}
+            onChange={(e) => setMeetingId(e.target.value)}
             placeholder="Enter meeting Id"
             className="px-4 py-3 bg-gray-650 rounded-xl text-white w-full text-center"
           />
@@ -77,15 +76,19 @@ export function MeetingDetailsScreen({
             className="px-4 py-3 mt-5 bg-gray-650 rounded-xl text-white w-full text-center"
           />
 
-          {/* <p className="text-xs text-white mt-1 text-center">
-            Your name will help everyone identify you in the meeting.
-          </p> */}
+          {iscreateMeetingClicked && !evidenceOk ? (
+            <p className="text-xs text-red-500 mt-2">
+              {evidenceLoading ? "Validando evidências..." : "evidence is required"}
+              {evidenceError ? ` — ${evidenceError}` : ""}
+            </p>
+          ) : null}
+
           <button
-            disabled={participantName.length < 3}
+            disabled={startDisabled}
             className={`w-full ${
-              participantName.length < 3 ? "bg-gray-650" : "bg-purple-350"
-            }  text-white px-2 py-3 rounded-xl mt-5`}
-            onClick={(e) => {
+              startDisabled ? "bg-gray-650" : "bg-purple-350"
+            } text-white px-2 py-3 rounded-xl mt-5`}
+            onClick={() => {
               if (iscreateMeetingClicked) {
                 if (videoTrack) {
                   videoTrack.stop();
@@ -108,19 +111,31 @@ export function MeetingDetailsScreen({
         <div className="w-full md:mt-0 mt-4 flex items-center justify-center flex-col">
           <button
             className="w-full bg-purple-350 text-white px-2 py-3 rounded-xl"
-            onClick={async (e) => {
-              const meetingId = await onClickCreateMeeting();
-              setMeetingId(meetingId);
-              setIscreateMeetingClicked(true);
+            onClick={async () => {
+              try {
+                console.log("[UI] Create a meeting: clicked");
+                const id = await onClickCreateMeeting();
+                console.log("[UI] Create a meeting: returned id =", id);
+
+                if (!id) {
+                  alert("CreateMeeting retornou vazio. Verifique logs no console.");
+                  return;
+                }
+
+                setMeetingId(id);
+                setIscreateMeetingClicked(true);
+              } catch (e) {
+                console.error("[UI] Create a meeting error:", e);
+                alert(String(e?.message || e));
+              }
             }}
           >
             Create a meeting
           </button>
+
           <button
             className="w-full bg-gray-650 text-white px-2 py-3 rounded-xl mt-5"
-            onClick={(e) => {
-              setIsJoinMeetingClicked(true);
-            }}
+            onClick={() => setIsJoinMeetingClicked(true)}
           >
             Join a meeting
           </button>

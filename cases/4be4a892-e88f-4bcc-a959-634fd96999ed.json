@@ -1,0 +1,15 @@
+{
+  "serverEvidence": {
+    "caseId": "4be4a892-e88f-4bcc-a959-634fd96999ed",
+    "meetingId": "jrac-khvz-f2ll",
+    "mode": "create",
+    "role": "creator",
+    "participantName": null,
+    "createdAt": "2026-01-21T01:35:00.039Z",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "acceptLanguage": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+    "host": "localhost:3001"
+  },
+  "clientEvidence": []
+}

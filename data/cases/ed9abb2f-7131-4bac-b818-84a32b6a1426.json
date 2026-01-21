@@ -1,0 +1,114 @@
+{
+  "caseId": "ed9abb2f-7131-4bac-b818-84a32b6a1426",
+  "meetingId": "mloo-qe5j-k9vh",
+  "participantName": "Guest",
+  "role": "creator",
+  "createdAt": "2026-01-21T01:19:13.880Z",
+  "server": {
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "acceptLanguage": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"
+  },
+  "evidences": [
+    {
+      "collectedAt": "2026-01-21T01:19:13.834Z",
+      "client": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+        "language": "pt-BR",
+        "languages": [
+          "pt-BR",
+          "en-US",
+          "pt",
+          "en"
+        ],
+        "platform": "Win32",
+        "hardwareConcurrency": 12,
+        "deviceMemory": 8,
+        "viewport": {
+          "width": 1366,
+          "height": 641,
+          "devicePixelRatio": 1
+        },
+        "screen": {
+          "width": 1366,
+          "height": 768,
+          "availWidth": 1366,
+          "availHeight": 728
+        },
+        "connection": {
+          "effectiveType": "4g",
+          "downlink": 4.45,
+          "rtt": 150,
+          "saveData": null
+        }
+      },
+      "permissions": {
+        "microphone": "granted",
+        "camera": "granted",
+        "geolocation": "granted",
+        "notifications": "prompt"
+      },
+      "mediaDevices": {
+        "hasMicrophone": true,
+        "hasWebcam": true,
+        "devices": [
+          {
+            "kind": "audioinput",
+            "label": "Microfone (4- WEB CAM) (1b3f:1167)",
+            "deviceId": "present",
+            "groupId": "present"
+          },
+          {
+            "kind": "audioinput",
+            "label": "Padrão - Microfone (4- WEB CAM) (1b3f:1167)",
+            "deviceId": "present",
+            "groupId": "present"
+          },
+          {
+            "kind": "audioinput",
+            "label": "Comunicações - Microfone (4- WEB CAM) (1b3f:1167)",
+            "deviceId": "present",
+            "groupId": "present"
+          },
+          {
+            "kind": "videoinput",
+            "label": "WEB CAM (1b3f:1167)",
+            "deviceId": "present",
+            "groupId": "present"
+          },
+          {
+            "kind": "audiooutput",
+            "label": "Padrão - Digital Audio (S/PDIF) (High Definition Audio Device)",
+            "deviceId": "present",
+            "groupId": "present"
+          },
+          {
+            "kind": "audiooutput",
+            "label": "Comunicações - LG HD (2- NVIDIA High Definition Audio)",
+            "deviceId": "present",
+            "groupId": "present"
+          },
+          {
+            "kind": "audiooutput",
+            "label": "Digital Audio (S/PDIF) (High Definition Audio Device)",
+            "deviceId": "present",
+            "groupId": "present"
+          },
+          {
+            "kind": "audiooutput",
+            "label": "LG HD (2- NVIDIA High Definition Audio)",
+            "deviceId": "present",
+            "groupId": "present"
+          }
+        ]
+      },
+      "geolocation": {
+        "ok": true,
+        "lat": -2.492514573357375,
+        "lng": -44.244481230099396,
+        "accuracy": 187
+      },
+      "receivedAt": "2026-01-21T01:19:18.256Z"
+    }
+  ]
+}

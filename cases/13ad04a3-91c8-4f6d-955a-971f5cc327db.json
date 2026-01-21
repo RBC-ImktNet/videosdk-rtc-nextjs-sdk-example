@@ -1,0 +1,48 @@
+{
+  "serverEvidence": {
+    "caseId": "13ad04a3-91c8-4f6d-955a-971f5cc327db",
+    "meetingId": "22if-orbl-z1tu",
+    "mode": "create",
+    "createdAt": "2026-01-21T00:56:41.783Z",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "acceptLanguage": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+    "host": "localhost:3001"
+  },
+  "clientEvidence": [
+    {
+      "receivedAt": "2026-01-21T00:56:42.153Z",
+      "data": {
+        "capturedAt": "2026-01-21T00:56:41.767Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+        "language": "pt-BR",
+        "platform": "Win32",
+        "timezone": "America/Sao_Paulo",
+        "timezoneOffsetMinutes": 180,
+        "screen": {
+          "width": 1366,
+          "height": 768,
+          "devicePixelRatio": 1
+        },
+        "viewport": {
+          "innerWidth": 1366,
+          "innerHeight": 641
+        },
+        "permissions": {
+          "supported": true,
+          "camera": "granted",
+          "microphone": "granted",
+          "geolocation": "granted"
+        },
+        "geo": {
+          "supported": true,
+          "allowed": true,
+          "lat": -2.492514573357375,
+          "lon": -44.244481230099396,
+          "accuracyMeters": 187,
+          "timestamp": 1768957001836
+        }
+      }
+    }
+  ]
+}
