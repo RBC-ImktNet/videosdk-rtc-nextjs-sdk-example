@@ -1,0 +1,52 @@
+{
+  "serverEvidence": {
+    "caseId": "93fbb0a9-aac3-42c2-bb97-3320ac2d91d3",
+    "meetingId": "owl0-8bd9-gano",
+    "mode": "join",
+    "role": "joiner",
+    "participantName": "Cardoso",
+    "createdAt": "2026-01-27T12:28:12.816Z",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+    "acceptLanguage": "pt-BR,pt;q=0.9",
+    "host": "localhost:3001"
+  },
+  "clientEvidence": [
+    {
+      "receivedAt": "2026-01-27T12:28:13.136Z",
+      "data": {
+        "capturedAt": "2026-01-27T12:28:13.235Z",
+        "userAgent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+        "language": "pt-BR",
+        "platform": "Win32",
+        "timezone": "America/Fortaleza",
+        "timezoneOffsetMinutes": 180,
+        "screen": {
+          "width": 1148,
+          "height": 1092,
+          "devicePixelRatio": 2
+        },
+        "viewport": {
+          "innerWidth": 1148,
+          "innerHeight": 1092
+        },
+        "permissions": {
+          "supported": true,
+          "camera": "granted",
+          "microphone": "granted",
+          "geolocation": "granted"
+        },
+        "geo": {
+          "supported": true,
+          "allowed": true,
+          "coords": {
+            "latitude": -2.537535897129797,
+            "longitude": -44.22122177360505,
+            "accuracy": 109
+          },
+          "error": null
+        }
+      }
+    }
+  ]
+}
